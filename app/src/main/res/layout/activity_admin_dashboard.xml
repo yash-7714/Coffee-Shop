@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Admin Dashboard"
+        android:textSize="28sp"
+        android:textColor="#6f4e37"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnManageCategories"
+        android:text="Manage Categories"
+        android:background="#6f4e37"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnManageProducts"
+        android:text="Manage Products"
+        android:background="#6f4e37"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnManageOrders"
+        android:text="Manage Orders"
+        android:background="#6f4e37"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+</LinearLayout>

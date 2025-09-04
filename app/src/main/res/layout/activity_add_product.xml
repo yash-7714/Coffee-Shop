@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp">
+        </View>
+        <TextView
+            android:text="Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6f4e37"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <EditText
+            android:id="@+id/etProductName"
+            android:hint="Product Name"
+            android:inputType="textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etProductDescription"
+            android:hint="Product Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etImageUrl"
+            android:hint="Image URL"
+            android:inputType="textUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:text="Save Product"
+            android:background="#6f4e37"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp" />
+
+    </LinearLayout>
+</ScrollView>

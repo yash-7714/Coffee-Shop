@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/order_confirmed"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:text="Thank You!"
+        android:textSize="32sp"
+        android:textColor="#6f4e37"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Your order has been placed successfully."
+        android:textSize="18sp"
+        android:textColor="#4e342e"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:text="Back to Home"
+        android:background="#6f4e37"
+        android:textColor="#fff"
+        android:padding="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

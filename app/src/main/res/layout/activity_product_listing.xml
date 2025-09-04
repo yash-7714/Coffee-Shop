@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Menu"
+        android:textSize="24sp"
+        android:textColor="#6f4e37"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listProducts"
+        android:divider="#6f4e37"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice" />
+
+    <Button
+        android:id="@+id/btnSubmitSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:textColor="#FFFFFF"
+        android:background="#6f4e37"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+</LinearLayout>

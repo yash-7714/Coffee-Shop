@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coffeeshop">
+
+    <!-- Internet permission (if needed for future online payments / APIs) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoffeeShop">
+
+        <!-- Splash screen (first activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- User-side activities -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProductListingActivity" />
+        <activity android:name=".SelectedProductsActivity"/>
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".PaymentActivity" />   <!-- ✅ Added -->
+        <activity android:name=".OrderConfirmationActivity" />
+
+        <!-- Admin-side activities -->
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".ManageCategoriesActivity" />
+        <activity android:name=".ManageProductsActivity" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".ManageOrdersActivity" />
+
+    </application>
+</manifest>

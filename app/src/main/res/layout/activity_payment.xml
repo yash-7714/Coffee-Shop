@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Payment Method"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6f4e37"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioUpi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online UPI"
+                android:textSize="16sp"
+                android:textColor="#4e342e" />
+
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit Card"
+                android:textSize="16sp"
+                android:textColor="#4e342e" />
+
+            <RadioButton
+                android:id="@+id/radioCOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash on Delivery"
+                android:textSize="16sp"
+                android:textColor="#4e342e" />
+        </RadioGroup>
+
+        <!-- Dynamic UPI Section -->
+        <LinearLayout
+            android:id="@+id/layoutUpi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter UPI ID:"
+                android:textSize="16sp"
+                android:textColor="#4e342e" />
+
+            <EditText
+                android:id="@+id/etUpiId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="example@upi"
+                android:inputType="textEmailAddress"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!-- Dynamic Card Section -->
+        <LinearLayout
+            android:id="@+id/layoutCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Number:"
+                android:textSize="16sp"
+                android:textColor="#4e342e" />
+
+            <EditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="XXXX XXXX XXXX 6789"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#4e342e" />
+
+            <EditText
+                android:id="@+id/etExpiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MM/YY"
+                android:inputType="text"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CVV:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#4e342e" />
+
+            <EditText
+                android:id="@+id/etCvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="XX7"
+                android:inputType="numberPassword"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProceedPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Pay"
+            android:background="#6f4e37"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+</ScrollView>

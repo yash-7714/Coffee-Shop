@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+    </View>
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:text="Add New Product"
+        android:background="#6f4e37"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listProducts"
+        android:divider="#6f4e37"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
